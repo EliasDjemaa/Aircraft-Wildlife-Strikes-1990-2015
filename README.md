@@ -30,3 +30,13 @@ In the example above we are searching for any null (NaN, none, NaT) data stored 
 awsDF['Height'].isnull().sum()
 ```
 In this second example we also use the .isnull() and .sum() functions to have a greater insight into how much of the data we are dealing with is missing.
+
+As is clear from the results returned there is a number of missing/null data which will cause a number of issues later down the line, to address this we can first replace all 'unknown' records with NaN. This will allow us to replace both 'unknown' and NaN records later on simultaneously.
+
+```
+# Replacing unknown values with nan
+awsDF = awsDF.replace('UKNOWN', np.nan)
+
+# Replacing NaN values with 0
+awsDF = awsDF.fillna(0)
+```
