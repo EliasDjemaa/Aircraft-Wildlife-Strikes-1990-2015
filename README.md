@@ -24,4 +24,6 @@ Upon attempting this method it is clear that it will not be as affective as it o
 ```
 awsDF['Height'].isnull().values.any()
 ```
-In the example above we are searching for any null (NaN, none, NaT) data stored. 
+In the example above we are searching for any null (NaN, none, NaT) data stored under the Height variable.
+
+
