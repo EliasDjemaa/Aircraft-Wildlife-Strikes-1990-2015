@@ -29,4 +29,4 @@ In the example above we are searching for any null (NaN, none, NaT) data stored 
 ```
 awsDF['Height'].isnull().sum()
 ```
-In this second example we also use the .isnull() and .sum() functions to have a greater insight into how much of thed ata we are dealing with is missing.
+In this second example we also use the .isnull() and .sum() functions to have a greater insight into how much of the data we are dealing with is missing.
